@@ -1,4 +1,5 @@
 import React from 'react';
+//e.stopPropagation mevzusu nedir?
 
 function Todo(props) {
     const {content, id, checked} = props;

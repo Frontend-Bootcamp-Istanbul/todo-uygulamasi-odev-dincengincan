@@ -5,7 +5,7 @@ class AddTodo extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            inputVal: ""
+            inputVal: "Do Shopping"
         };
         this.changeInput = this.changeInput.bind(this);
         this.addTodo = this.addTodo.bind(this);
@@ -21,7 +21,7 @@ class AddTodo extends React.Component {
     addTodo(event){
         event.preventDefault();
         this.props.onTodoAdd(this.state.inputVal);
-        this.setState({
+        this.setState({ //Bu ne işe yarıyor??
             inputVal: ""
         });
     }
@@ -33,9 +33,12 @@ class AddTodo extends React.Component {
             <input
                 type="text"
                 value={this.state.inputVal}
-                onChange={this.changeInput} />
+                onChange={this.changeInput}
+                 />
             <button>Ekle</button>
         </form>
+        
+        
     }
 }
 

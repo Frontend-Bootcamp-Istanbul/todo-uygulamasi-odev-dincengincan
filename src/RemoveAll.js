@@ -1,5 +1,5 @@
 import React from 'react';
-
+//onClick'te neden onClick={this.props.onRemoveAll} yapmadık? Böyle de çalışıyor. 
 
 class RemoveAll extends React.Component {
     render() {
